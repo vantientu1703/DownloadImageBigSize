@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DownloadImageBigSize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kkE-iN-8DI">
+                                <rect key="frame" x="20" y="119" width="335" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="a9D-wh-M73"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MVn-ze-u7W">
+                                <rect key="frame" x="20" y="368" width="335" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kkE-iN-8DI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="McS-Qr-cB5"/>
+                            <constraint firstAttribute="trailing" secondItem="MVn-ze-u7W" secondAttribute="trailing" constant="20" id="NXc-1W-ns5"/>
+                            <constraint firstItem="MVn-ze-u7W" firstAttribute="top" secondItem="kkE-iN-8DI" secondAttribute="bottom" constant="20" id="P1w-Am-L8M"/>
+                            <constraint firstItem="kkE-iN-8DI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="Puc-dl-Uyp"/>
+                            <constraint firstItem="MVn-ze-u7W" firstAttribute="centerX" secondItem="kkE-iN-8DI" secondAttribute="centerX" id="ec9-zz-Xxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkE-iN-8DI" secondAttribute="trailing" constant="20" id="faO-Ql-qQm"/>
+                            <constraint firstItem="kkE-iN-8DI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kxL-nj-c2q"/>
+                            <constraint firstItem="MVn-ze-u7W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="o4G-0b-ay6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="kkE-iN-8DI" id="u2F-Se-0t6"/>
+                        <outlet property="processingView" destination="MVn-ze-u7W" id="EnR-ui-8KO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder.jpg" width="1920" height="1080"/>
+    </resources>
+</document>
